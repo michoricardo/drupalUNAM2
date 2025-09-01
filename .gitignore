@@ -1,0 +1,53 @@
+
+
+# Ignore web 
+/vendor/
+/web/core/
+/web/modules/
+/web/themes/
+/node_modules/
+
+
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore Drupal file system directories
+/sites/*/files/
+/sites/*/private/
+/sites/simpletest/
+/sites/*/settings*.php
+
+# Ignore environment and configuration files
+.env
+.env.local
+.env.*.local
+
+# Ignore DDEV configuration
+.ddev/
+
+# Ignore node modules and build artifacts
+/node_modules/
+/bower_components/
+/build/
+/tmp/
+/temp/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE and editor settings
+.idea/
+/.vscode/
+/*.sublime-project
+/*.sublime-workspace
+
+# Ignore log files
+*.log
+
+# Ignore backup and temporary files
+*~
+*.swp
+*.bak
+*.tmp
+
