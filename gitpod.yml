@@ -1,0 +1,23 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: "Instalar dependencias y preparar entorno"
+    init: |
+      composer install
+      cp web/sites/default/default.settings.php web/sites/default/settings.php
+      mkdir -p web/sites/default/files
+      chmod -R 777 web/sites/default/files
+    command: |
+      echo "Entorno listo. Puedes iniciar Drupal en http://localhost:8080"
+
+ports:
+  - port: 8080
+    onOpen: open-preview
+    description: "Servidor web Drupal"
+
+vscode:
+  extensions:
+    - drupal.drupal
+    - bmewburn.vscode-intelephense-client
+    - esbenp.prettier-vscode
