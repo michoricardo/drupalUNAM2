@@ -286,7 +286,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'rqUVVtvNw9Dr3QptpgfEw9K1qT6BXimtRSmH8KfA_XfswAe5TpMfB6RDMNELBG0qBTYN__mPhQ';
 
 /**
  * Deployment identifier.
@@ -892,3 +892,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+$databases['default']['default'] = array (
+  'database' => 'sites/default/files/.ht.sqlite',
+  'prefix' => '',
+  'driver' => 'sqlite',
+  'namespace' => 'Drupal\\sqlite\\Driver\\Database\\sqlite',
+  'autoload' => 'core/modules/sqlite/src/Driver/Database/sqlite/',
+);
+$settings['config_sync_directory'] = 'sites/default/files/config_kzEcUnh0aiAPa5F9CVADtnnbLw0m02u-LGmRNgLo-7pV474z29w_sXNAH6XbMOVVoB2J5h9V7g/sync';
