@@ -1,53 +1,50 @@
 
-
-# Ignore web 
+# Composer dependencies
 /vendor/
+
+# Drupal core and contrib modules/themes
 /web/core/
-/web/modules/
-/web/themes/
-/node_modules/
+/web/modules/contrib/
+/web/themes/contrib/
 
-
-# Ignore Composer dependencies
-/vendor/
-
-# Ignore Drupal file system directories
-/sites/*/files/
-/sites/*/private/
-/sites/simpletest/
-/sites/*/settings*.php
-
-# Ignore environment and configuration files
+# Drupal file system directories
+/web/sites/*/files/
+/web/sites/*/private/
+/web/sites/simpletest/
+/web/sites/default/settings.local.php
+# Environment and configuration files
 .env
 .env.local
 .env.*.local
 
-# Ignore DDEV configuration
+# DDEV configuration
 .ddev/
 
-# Ignore node modules and build artifacts
+# Node modules and build artifacts
 /node_modules/
 /bower_components/
 /build/
 /tmp/
 /temp/
 
-# Ignore OS generated files
+# OS generated files
 .DS_Store
 Thumbs.db
 
-# Ignore IDE and editor settings
+# IDE and editor settings
 .idea/
 /.vscode/
-/*.sublime-project
-/*.sublime-workspace
+*.sublime-project
+*.sublime-workspace
 
-# Ignore log files
+# Log files
 *.log
 
-# Ignore backup and temporary files
+# Backup and temporary files
 *~
 *.swp
 *.bak
 *.tmp
 
+/web/sites/default/settings.ddev.php
+/web/sites/default/files/database.sqlite
