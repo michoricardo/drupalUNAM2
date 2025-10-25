@@ -1,50 +1,27 @@
-
-# Composer dependencies
-/vendor/
-
-# Drupal core and contrib modules/themes
-/web/core/
-/web/modules/contrib/
-/web/themes/contrib/
-
-# Drupal file system directories
-/web/sites/*/files/
-/web/sites/*/private/
-/web/sites/simpletest/
-/web/sites/default/settings.local.php
-# Environment and configuration files
-.env
-.env.local
-.env.*.local
-
-# DDEV configuration
+# Keep DDEV config but ignore other ddev files
 .ddev/
+!/.ddev/config.yaml
 
-# Node modules and build artifacts
-/node_modules/
-/bower_components/
-/build/
-/tmp/
-/temp/
+# Drupal generated files and caches (match your layout)
+drupal10/web/sites/*/files/
+drupal10/web/db/
 
-# OS generated files
+# Don't track local settings
+drupal10/web/sites/default/settings.php
+drupal10/web/sites/default/settings.local.php
+
+# Composer / vendor / node
+vendor/
+node_modules/
+
+# Build / cache / dumps
+*.sql
+*.sql.gz
+*.tar.gz
+*.zip
+
+# OS / editor / IDE
 .DS_Store
-Thumbs.db
-
-# IDE and editor settings
+.vscode/
 .idea/
-/.vscode/
-*.sublime-project
-*.sublime-workspace
-
-# Log files
 *.log
-
-# Backup and temporary files
-*~
-*.swp
-*.bak
-*.tmp
-
-/web/sites/default/settings.ddev.php
-/web/sites/default/files/database.sqlite
