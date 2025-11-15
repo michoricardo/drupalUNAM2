@@ -1,0 +1,35 @@
+content_types:
+- laboratorio
+- personal
+- equipamiento
+- servicio
+- accesibilidad
+- documentacion
+- infraestructura
+- mantenimiento
+vocabularios:
+  estado_equipo:
+  - Operativo
+  - En mantenimiento
+  - Dado de baja
+  protocolos_seguridad:
+  - Bioseguridad
+  - Sustancias peligrosas
+  publico_objetivo:
+  - Interno
+  - Externo
+  - Colaboraciones
+  tipo_equipamiento:
+  - Computadora
+  - Videocámara
+  - Plotter
+  - Impresora 3D
+  tipo_instalacion:
+  - Gas
+  - Agua
+  - Ventilación
+  - Aislamiento
+  tipo_servicio:
+  - Análisis químico
+  - Georreferenciación
+  - Ensayos sísmicos
